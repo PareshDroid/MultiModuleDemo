@@ -1,4 +1,4 @@
-package com.example.multimoduledemo.di
+package com.example.multimoduledemo.di.module
 
 import android.content.Context
 import com.example.multimoduledemo.MyApplication

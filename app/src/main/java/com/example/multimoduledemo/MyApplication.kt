@@ -6,7 +6,7 @@ import android.content.Context
 import com.example.core.di.CoreComponent
 import com.example.core.di.DaggerCoreComponent
 import com.example.core.di.module.ContextModule
-import com.example.multimoduledemo.di.DaggerAppComponent
+import com.example.multimoduledemo.di.component.DaggerAppComponent
 import javax.inject.Inject
 
 class MyApplication() : Application() {
