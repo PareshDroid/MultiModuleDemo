@@ -1,0 +1,1 @@
+D:\Android studio project\MultiModuleDemo\buildSrc\build\classes\kotlin\main\BuilDependenciesVersion.class;D:\Android studio project\MultiModuleDemo\buildSrc\build\classes\kotlin\main\Dependencies.class;D:\Android studio project\MultiModuleDemo\buildSrc\build\classes\kotlin\main\TestDependencies.class

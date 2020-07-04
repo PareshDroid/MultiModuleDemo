@@ -26,21 +26,24 @@ android {
 
 dependencies {
     implementation project(':core')
+    implementation project(':feature:home')
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation(Dependencies.KOTLIN_STD_LIB)
+    implementation(Dependencies.KOTLIN)
+    implementation(Dependencies.APPCOMPAT)
+    implementation(Dependencies.CONSTRAINT_LAYOUT)
+    implementation(Dependencies.NAVIGATION_FRAGMENT)
+    implementation(Dependencies.NAVIGATION_UI)
+    testImplementation(TestDependencies.JUNIT)
+    androidTestImplementation(TestDependencies.EXT_JUNIT)
+    androidTestImplementation(TestDependencies.ESPRESSO)
 
     // Dependency injection
-    implementation "com.google.dagger:dagger:2.21"
-    annotationProcessor "com.google.dagger:dagger-compiler:2.21"
+    implementation(Dependencies.DAGGER)
+    annotationProcessor(Dependencies.DAGGER_COMPILER)
 
-    kapt 'com.google.dagger:dagger-android-processor:2.15'
-    kapt 'com.google.dagger:dagger-compiler:2.15'
+    kapt(Dependencies.KAPT_DAGGER_PROCESSOR)
+    kapt(Dependencies.KAPT_DAGGER_COMPILER)
 
 }
